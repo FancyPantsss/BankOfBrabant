@@ -11801,11 +11801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fancypants\\source\\repos\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
+      "projectUniqueName": "C:\\Users\\Fancypants\\Documents\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
       "projectName": "BankOfBrabant",
-      "projectPath": "C:\\Users\\Fancypants\\source\\repos\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
+      "projectPath": "C:\\Users\\Fancypants\\Documents\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
       "packagesPath": "C:\\Users\\Fancypants\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fancypants\\source\\repos\\BankOfBrabant\\BankOfBrabant\\obj\\",
+      "outputPath": "C:\\Users\\Fancypants\\Documents\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

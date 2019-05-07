@@ -8,4 +8,10 @@ namespace BankOfBrabant.Models
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
+
+    public class RekeningHouder
+    {
+        public string rekeningHouder { get; set; }
+
+    }
 }

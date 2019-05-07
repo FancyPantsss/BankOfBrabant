@@ -24,7 +24,7 @@ namespace BankOfBrabant.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Type rekeninghouder";
 
             return View();
         }
