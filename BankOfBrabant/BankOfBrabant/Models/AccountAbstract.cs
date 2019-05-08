@@ -7,10 +7,10 @@ namespace BankOfBrabant.Models
 {
     public class AccountAbstract
     {
-        protected double balance { get; set; }
-        protected double interest { get; set; }
-        protected string accountNumber { get; set; }
-        public int passNumber { get; set; }
+        protected double Balance { get; set; }
+        protected double Interest { get; set; }
+        protected string AccountNumber { get; set; }
+        public int PassNumber { get; set; }
 
         // add money function is called when a transaction adds money to an account.
         // withdraw money function is called when a transaction withdraws money from an account.

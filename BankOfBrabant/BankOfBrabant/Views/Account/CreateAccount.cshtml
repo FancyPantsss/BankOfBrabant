@@ -13,9 +13,9 @@
         <form asp-action="CreateAccount">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="passNumber" class="control-label"></label>
-                <input asp-for="passNumber" class="form-control" />
-                <span asp-validation-for="passNumber" class="text-danger"></span>
+                <label asp-for="PassNumber" class="control-label"></label>
+                <input asp-for="PassNumber" class="form-control" />
+                <span asp-validation-for="PassNumber" class="text-danger"></span>
             </div>
 
             <div class="dropdown">
@@ -26,13 +26,12 @@
                     <option value="3"> paymentAccount</option>
                 </select>
             </div>
-
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default"/>
-            </div>
         </form>
+        <form asp-action="CreateButton_Click()" asp-controller="Account"></form>
+            <input type="submit" value="Create" class="btn btn-default" />
+            
+        </div>
     </div>
-</div>
 
 <div>
     <a asp-action="Index">Back to List</a>

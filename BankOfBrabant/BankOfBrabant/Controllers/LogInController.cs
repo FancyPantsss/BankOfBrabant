@@ -3,27 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using BankOfBrabant.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace BankOfBrabant.Controllers
 {
-    public class AccountController : Controller
+    public class LogInController : Controller
     {
         // GET: /<controller>/
-        public IActionResult CreateAccount()
+        public IActionResult LoginScreen()
         {
-            AccountAbstract account = new DepositAccount(10,20,"5");
-            return View(account);
-        }
-
-        [HttpPost]
-        public ActionResult CreateButton_Click()
-        {
-            ViewBag.naam = "Davey";
             return View();
         }
 
+        public IActionResult LoginPress()
+        {
+            ViewBag.Message = "Hallo";
+            return View();
+        }
     }
 }

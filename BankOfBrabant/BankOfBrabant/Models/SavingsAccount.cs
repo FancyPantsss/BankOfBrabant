@@ -9,21 +9,21 @@ namespace BankOfBrabant.Models
     {
         public SavingsAccount(double balance, double interest, string accountNumber)
         {
-            balance = this.balance;
-            interest = this.interest;
-            accountNumber = this.accountNumber;
+            balance = this.Balance;
+            interest = this.Interest;
+            accountNumber = this.AccountNumber;
         }
 
 
 
         public new void AddMoney(double addToSaving)
         {
-            balance += addToSaving;
+            Balance += addToSaving;
         }
 
         public new void WithdrawMoney(double outGoing)
         {
-            balance -= outGoing;
+            Balance -= outGoing;
         }
     }
 }

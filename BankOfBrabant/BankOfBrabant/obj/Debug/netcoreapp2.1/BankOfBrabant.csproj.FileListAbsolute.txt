@@ -31,3 +31,4 @@ C:\Users\Dave\MyDocuments\bankofbrabant\BankOfBrabant\BankOfBrabant\bin\Debug\ne
 C:\Users\Dave\MyDocuments\bankofbrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.Views.pdb
 C:\Users\Dave\MyDocuments\bankofbrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.csproj.CopyComplete
 C:\Users\Dave\MyDocuments\bankofbrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\Account\CreateAccount.g.cshtml.cs
+C:\Users\Dave\MyDocuments\bankofbrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\LogIn\loginScreen.g.cshtml.cs
