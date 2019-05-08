@@ -15,7 +15,6 @@ C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debu
 C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.TagHelpers.output.cache
 C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.RazorCoreGenerate.cache
 C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
@@ -30,3 +29,13 @@ C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debu
 C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.dll
 C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.pdb
 C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.csproj.CopyComplete
+C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\Test\Index.g.cshtml.cs
+C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\Test\zetopscherm.g.cshtml.cs
+C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\Rekening\Rekening.g.cshtml.cs
+C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\Rekening\geefweer.g.cshtml.cs
+C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\RekeningOverzichts\Create.g.cshtml.cs
+C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\RekeningOverzichts\Delete.g.cshtml.cs
+C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\RekeningOverzichts\Details.g.cshtml.cs
+C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\RekeningOverzichts\Edit.g.cshtml.cs
+C:\Users\Fancypants\Documents\BankOfBrabant\BankOfBrabant\BankOfBrabant\obj\Debug\netcoreapp2.1\Razor\Views\RekeningOverzichts\Index.g.cshtml.cs

@@ -9,7 +9,7 @@ namespace BankOfBrabant.Models
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 
-    public class RekeningHouder
+    public class Rhouder
     {
         public string rekeningHouder { get; set; }
 
