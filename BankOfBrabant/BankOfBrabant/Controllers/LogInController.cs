@@ -19,6 +19,7 @@ namespace BankOfBrabant.Controllers
         public IActionResult LoginPress()
         {
             ViewBag.Message = "Hallo";
+            //hallo//
             return View();
         }
     }
