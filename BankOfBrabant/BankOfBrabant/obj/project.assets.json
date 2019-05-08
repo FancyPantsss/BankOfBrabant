@@ -11795,23 +11795,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fancypants\\.nuget\\packages\\": {},
+    "C:\\Users\\Nikki.Nikki\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fancypants\\source\\repos\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
+      "projectUniqueName": "C:\\Users\\Nikki.Nikki\\Documents\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
       "projectName": "BankOfBrabant",
-      "projectPath": "C:\\Users\\Fancypants\\source\\repos\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
-      "packagesPath": "C:\\Users\\Fancypants\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fancypants\\source\\repos\\BankOfBrabant\\BankOfBrabant\\obj\\",
+      "projectPath": "C:\\Users\\Nikki.Nikki\\Documents\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
+      "packagesPath": "C:\\Users\\Nikki.Nikki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nikki.Nikki\\Documents\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Fancypants\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nikki.Nikki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
