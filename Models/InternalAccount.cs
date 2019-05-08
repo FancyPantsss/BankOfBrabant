@@ -22,6 +22,8 @@ namespace BankOfBrabant.Models
         public new void WithdrawMoney(double outGoing)
         {
             Balance -= outGoing;
+            //bla
+        
         }
     }
 }

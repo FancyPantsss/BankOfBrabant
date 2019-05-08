@@ -12538,11 +12538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dave\\MyDocuments\\bankofbrabant\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
+      "projectUniqueName": "C:\\Users\\Dave\\MyDocuments\\bankofbrabant\\BankOfBrabant.csproj",
       "projectName": "BankOfBrabant",
-      "projectPath": "C:\\Users\\Dave\\MyDocuments\\bankofbrabant\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
+      "projectPath": "C:\\Users\\Dave\\MyDocuments\\bankofbrabant\\BankOfBrabant.csproj",
       "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dave\\MyDocuments\\bankofbrabant\\BankOfBrabant\\BankOfBrabant\\obj\\",
+      "outputPath": "C:\\Users\\Dave\\MyDocuments\\bankofbrabant\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
