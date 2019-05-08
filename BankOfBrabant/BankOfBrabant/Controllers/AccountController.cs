@@ -18,10 +18,10 @@ namespace BankOfBrabant.Controllers
             return View(account);
         }
 
-        [HttpPost]
+        
         public ActionResult CreateButton_Click()
         {
-            ViewBag.naam = "Davey";
+            ViewBag.Message = "Account created";
             return View();
         }
 

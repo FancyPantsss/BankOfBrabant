@@ -17,21 +17,20 @@
                 <input asp-for="PassNumber" class="form-control" />
                 <span asp-validation-for="PassNumber" class="text-danger"></span>
             </div>
-
-            <div class="dropdown">
-                <telerik id="openAccount"></telerik>
+        </form>
+        <form asp-action="CreateButton_Click()" asp-controller="Account">
+            <div class="dropdown" name="dropbox">
                 <select>
                     <option value="1"> savingsAccount</option>
                     <option value="2"> depositAccount</option>
                     <option value="3"> paymentAccount</option>
                 </select>
             </div>
+            <input type="submit" name="createButton" />
         </form>
-        <form asp-action="CreateButton_Click()" asp-controller="Account"></form>
-            <input type="submit" value="Create" class="btn btn-default" />
-            
-        </div>
     </div>
+</div>
+
 
 <div>
     <a asp-action="Index">Back to List</a>
