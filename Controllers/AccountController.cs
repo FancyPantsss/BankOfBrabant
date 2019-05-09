@@ -20,7 +20,7 @@ namespace BankOfBrabant.Controllers
 
         public IActionResult overboeken()
         {
-           
+            ViewBag.rekeningnummer = "NL INGB 00080088";
             return View();
         }
 
