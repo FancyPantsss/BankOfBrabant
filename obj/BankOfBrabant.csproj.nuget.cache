@@ -1,0 +1,9 @@
+{
+  "version": 1,
+<<<<<<< HEAD:BankOfBrabant/BankOfBrabant/obj/BankOfBrabant.csproj.nuget.cache
+  "dgSpecHash": "iuQeMD+TXCVeA54L5b/67u+yu4pDsgoZBm5uQ2DM+qdYFHCujilyZcYcpO+5u8gG0IIOKUwGW/vDjlF2sTgl9Q==",
+=======
+  "dgSpecHash": "DbCwoyzFRzz0OcIHZswkeXPOVXUGaL9CMQUIVKuNx/sTwxs5qjSiheJ+MRE6prCBps+p4FulMuuJNw5rE1ENoA==",
+>>>>>>> overboeken:obj/BankOfBrabant.csproj.nuget.cache
+  "success": true
+}
