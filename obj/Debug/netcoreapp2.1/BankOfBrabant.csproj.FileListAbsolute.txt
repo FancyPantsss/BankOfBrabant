@@ -86,7 +86,6 @@ C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.As
 C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.TagHelpers.input.cache
 C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.TagHelpers.output.cache
 C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.RazorCoreGenerate.cache
-C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\Razor\Views\Account\Accountcreated.g.cshtml.cs
 C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\Razor\Views\Account\CreateAccount.g.cshtml.cs
 C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
@@ -106,3 +105,4 @@ C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.Vi
 C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.dll
 C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.pdb
 C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\BankOfBrabant.csproj.CopyComplete
+C:\Users\Dave\MyDocuments\bankofbrabant\obj\Debug\netcoreapp2.1\Razor\Views\Account\CreateButton.g.cshtml.cs
