@@ -21,7 +21,7 @@ namespace BankOfBrabant.Controllers
 
         public ActionResult CreateButton(String accountType, int PassNumber, string AccountName, int PinCode)
         {
-            SQLManager sqm = SQLManager.Initialize("94.208.132.186", "23412", "testdb", "user02", "X7f6EysG8jrgNQvp");
+            //SQLManager sqm = SQLManager.Initialize("94.208.132.186", "23412", "testdb", "user02", "X7f6EysG8jrgNQvp");
 
             if (PassNumber != 0 & !String.IsNullOrEmpty(AccountName))
             {
