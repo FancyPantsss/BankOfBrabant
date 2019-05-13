@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using BankOfBrabant.Models;
 using MySql.Data.MySqlClient;
 
+
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace BankOfBrabant.Controllers
@@ -18,9 +19,9 @@ namespace BankOfBrabant.Controllers
             return View();
         }
 
-        public ActionResult CreateButton(String accountType, int PassNumber, string AccountName)
+        public ActionResult CreateButton(String accountType, int PassNumber, string AccountName, int PinCode)
         {
-            //SQLManager sqm = SQLManager.Initialize("94.208.132.186", "23412", "testdb", "user02", "X7f6EysG8jrgNQvp");
+            SQLManager sqm = SQLManager.Initialize("94.208.132.186", "23412", "testdb", "user02", "X7f6EysG8jrgNQvp");
 
             if (PassNumber != 0 & !String.IsNullOrEmpty(AccountName))
             {
@@ -28,33 +29,39 @@ namespace BankOfBrabant.Controllers
                 {
                     if (accountType.Equals("depositAccount"))
                     {
-                        AccountAbstract account = new DepositAccount(500, 1, 6, PassNumber, 3333, AccountName);
+                        AccountAbstract account = new DepositAccount(500, 1, 6, PassNumber, PinCode, AccountName);
                         ViewBag.Message = accountType;
                         return View(account);
                     }
                     else if (accountType.Equals("savingsAccount"))
                     {
-                        AccountAbstract account = new SavingsAccount(500, 1, 5, PassNumber, 2222, AccountName);
+                        AccountAbstract account = new SavingsAccount(500, 1, 5, PassNumber, PinCode, AccountName);
                         ViewBag.Message = account.AccountName;
                         System.Diagnostics.Debug.WriteLine(account.PassNumber);
                         return View(account);
                     }
                     else
                     {
-                        AccountAbstract account = new SpendingAccount(500, 1, 7, PassNumber, 1111, AccountName);
+                        AccountAbstract account = new SpendingAccount(500, 1, 7, PassNumber, PinCode, AccountName);
                         ViewBag.Message = accountType;
                         return View(account);
                     }
                 }
+
+                //Functions functionController = DependencyResolver.Current.GetService<Functions>();
+                //functionController.ControllerContext = new ControllerContext(this.Request.RequestContext, functionController);
+
                 else
                 {
                     ViewBag.Message = "This account name is already in use, please choose another one.";
+                    //CreateAccount();
                     return View();
                 }
             }
             else
             {
                 ViewBag.Message = "Please fill in your passnumber and desired account name.";
+                //View() = CreateAccount();
                 return View();
             }
         }
