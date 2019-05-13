@@ -65,7 +65,7 @@ using BankOfBrabant.Models;
             WriteLiteral("\r\n<h2>loginScreen</h2>\r\n\r\n");
             EndContext();
             BeginContext(75, 184, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "458ce31d55e045b58d8215f84f82606e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fba81d6db7cc44d98258b4806a6c91b6", async() => {
                 BeginContext(129, 123, true);
                 WriteLiteral("\r\n<input type=\"number\" name=\"passnumber\" />\r\n<input type=\"number\" name=\"pincode\" />\r\n<input type=\"submit\" name=\"logIn\" />\r\n");
                 EndContext();

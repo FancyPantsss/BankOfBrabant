@@ -5,14 +5,6 @@ using System.Text;
 
 namespace SqlConnection.DatabaseShit.Entiteiten
 {
-    enum RekeningTypes
-    {
-        BETAAL = 0x02,
-        SPAAR = 0x03,
-        DEPOSIT = 0x04,
-        INTERN = 0x05
-    }
-
     class Rekening
     {
         public ulong ID
@@ -21,13 +13,14 @@ namespace SqlConnection.DatabaseShit.Entiteiten
             private set;
         }
 
-        public string Nummer
+        public string AccountType
         {
             get;
-            private set;
+            set;
         }
 
-        public RekeningTypes Type
+
+        public string Nummer
         {
             get;
             private set;
@@ -45,28 +38,52 @@ namespace SqlConnection.DatabaseShit.Entiteiten
             set;
         }
 
+        public string RekeningNaam
+        {
+            get;
+            set;
+        }
+
+        public int PassNumber
+        {
+            get;
+            set;
+        }
+
+        public int PinCode
+        {
+            get;
+            set;
+        }
+
 
         public Rekening()
         {
 
         }
 
-        public Rekening(string rekeningNummer, RekeningTypes type, decimal saldo, float rentePercentage)
+        public Rekening(string rekeningNummer, string accountType, decimal saldo, float rentePercentage, string rekeningNaam, int passNumber, int pinCode)
         {
             ID = ulong.MaxValue; //invalid need to get a new one in the database
             Nummer = rekeningNummer; //can only be set once upon creation of a new account
-            Type = type;
+            AccountType = accountType;
             Saldo = saldo;
             RentePercentage = rentePercentage;
+            RekeningNaam = rekeningNaam;
+            PassNumber = passNumber;
+            PinCode = pinCode;
         }
 
         public Rekening(DataRow row)
         {
             ID = (ulong)(long)row["ID"];
             Nummer = row["RekeningNummer"].ToString();
-            Type = (RekeningTypes)(byte)(sbyte)row["RekeningType"];
+            AccountType = row["RekeningType"].ToString();
             Saldo = (decimal)row["Saldo"];
             RentePercentage = (float)row["RentePercentage"];
+            RekeningNaam = row["RekeningNaam"].ToString();
+            PassNumber = (int)row["PasNummer"];
+            PinCode = (int)row["PinCode"];
         }
     }
 }

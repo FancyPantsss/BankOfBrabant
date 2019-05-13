@@ -66,7 +66,7 @@ namespace SqlConnection.DatabaseShit
         //@TODO search on email
 
         //Rekeningen
-        private const string QRY_CreateRekening = "insert into Rekeningen(RekeningNummer, RekeningType, Saldo, RentePercentage) values(@RekeningNummer, @RekeningType, @Saldo, @RentePercentage); SELECT LAST_INSERT_ID();";
+        private const string QRY_CreateRekening = "insert into Rekeningen(RekeningNummer, RekeningType, Saldo, RentePercentage, RekeningNaam, PasNummer, PinCode) values(@RekeningNummer, @RekeningType, @Saldo, @RentePercentage, @RekeningNaam, @PassNumber, @PinCode); SELECT LAST_INSERT_ID();";
         private const string QRY_UpdateRekening = "update Rekeningen set RekeningType = @RekeningType, Saldo = @Saldo, RentePercentage = @RentePercentage where ID = @ID;";
         private const string QRY_ReadAllFromRekeningen = "select * from Rekeningen;";
         private const string QRY_ReadRekeningByID = "select * from Rekeningen where ID = @ID;";
@@ -311,19 +311,22 @@ namespace SqlConnection.DatabaseShit
 
         public ulong CreateRekening(Rekening rekening)
         {
-            return CreateRekening(rekening.Nummer, rekening.RentePercentage, rekening.Saldo, rekening.Type);
+            return CreateRekening(rekening.Nummer, rekening.AccountType, rekening.Saldo, rekening.RentePercentage, rekening.RekeningNaam, rekening.PassNumber, rekening.PinCode);
         }
 
-        public ulong CreateRekening(string nummer, float rentePercentage, decimal saldo, RekeningTypes type)
+        public ulong CreateRekening(string nummer, string rekeningType, decimal saldo, float rentePercentage, string accountName, int passNumber, int pinCode)
         {
             mySqlConnection.Open();
             MySqlCommand command = mySqlConnection.CreateCommand();
 
             command.CommandText = QRY_CreateRekening;
             command.Parameters.AddWithValue("@RekeningNummer", nummer);
-            command.Parameters.AddWithValue("@RekeningType", (sbyte)(byte)type);
+            command.Parameters.AddWithValue("@RekeningType", rekeningType);
             command.Parameters.AddWithValue("@Saldo", saldo);
             command.Parameters.AddWithValue("@RentePercentage", rentePercentage);
+            command.Parameters.AddWithValue("@RekeningNaam", accountName);
+            command.Parameters.AddWithValue("@PassNumber", passNumber);
+            command.Parameters.AddWithValue("@PinCode", pinCode);
 
             MySqlDataReader reader = command.ExecuteReader();
 
@@ -338,12 +341,12 @@ namespace SqlConnection.DatabaseShit
             return id;
         }
 
-        public void UpdateRekening(Rekening rekening)
+     /*   public void UpdateRekening(Rekening rekening)
         {
             UpdateRekening(rekening.ID, rekening.RentePercentage, rekening.Saldo, rekening.Type);
         }
-
-        public void UpdateRekening(ulong id, float rentePercentage, decimal saldo, RekeningTypes type)
+        */
+        /*public void UpdateRekening(ulong id, float rentePercentage, decimal saldo, RekeningTypes type)
         {
             mySqlConnection.Open();
             MySqlCommand command = mySqlConnection.CreateCommand();
@@ -358,7 +361,7 @@ namespace SqlConnection.DatabaseShit
             command.Dispose();
             mySqlConnection.Close();
         }
-
+        */
         public Rekening[] ReadAllFromRekeningen()
         {
             DataTable table = new DataTable();
