@@ -66,11 +66,12 @@ namespace SqlConnection.DatabaseShit
         //@TODO search on email
 
         //Rekeningen
-        private const string QRY_CreateRekening = "insert into Rekeningen(RekeningNummer, RekeningType, Saldo, RentePercentage, RekeningNaam, PasNummer, PinCode) values(@RekeningNummer, @RekeningType, @Saldo, @RentePercentage, @RekeningNaam, @PassNumber, @PinCode); SELECT LAST_INSERT_ID();";
+        private const string QRY_CreateRekening = "insert into Rekeningen(RekeningNummer, RekeningType, Saldo, RentePercentage, RekeningNaam, PassNummer, PinCode) values(@RekeningNummer, @RekeningType, @Saldo, @RentePercentage, @RekeningNaam, @PassNumber, @PinCode); SELECT LAST_INSERT_ID();";
         private const string QRY_UpdateRekening = "update Rekeningen set RekeningType = @RekeningType, Saldo = @Saldo, RentePercentage = @RentePercentage where ID = @ID;";
         private const string QRY_ReadAllFromRekeningen = "select * from Rekeningen;";
         private const string QRY_ReadRekeningByID = "select * from Rekeningen where ID = @ID;";
         private const string QRY_DeleteRekeningByID = "delete from Rekeningen where ID = @ID;";
+        private const string QRY_ReadRekeningByPassNumber = "select * from Rekeningen where PassNummer = @PassNumber;";
 
         //RekeningBevoegde
         private const string QRY_CreateRekeningBevoegde = "insert into RekeningBevoegdes(KlantID, RekeningID, Relatie) values (@KlantID, @RekeningID, @Relatie);";
@@ -372,6 +373,30 @@ namespace SqlConnection.DatabaseShit
 
             for (int i = 0; i < table.Rows.Count; i++)
                 rekeningen[i] = new Rekening(table.Rows[i]);
+
+            return rekeningen;
+        }
+
+        public Rekening[] ReadRekeningByPassNumber(int passNumber)
+        {
+            DataTable table = new DataTable();
+            MySqlCommand command = mySqlConnection.CreateCommand();
+
+            command.CommandText = QRY_ReadRekeningByPassNumber;
+            command.Parameters.AddWithValue("@PassNumber", passNumber);
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            adapter.Fill(table);
+
+            if (table.Rows.Count < 1)
+                return null;
+
+            Rekening[] rekeningen = new Rekening[table.Rows.Count];
+
+            for (int i = 0; i < table.Rows.Count; i++)
+                rekeningen[i] = new Rekening(table.Rows[i]);
+
+            command.Dispose();
 
             return rekeningen;
         }

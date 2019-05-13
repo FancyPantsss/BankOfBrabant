@@ -82,8 +82,9 @@ namespace SqlConnection.DatabaseShit.Entiteiten
             Saldo = (decimal)row["Saldo"];
             RentePercentage = (float)row["RentePercentage"];
             RekeningNaam = row["RekeningNaam"].ToString();
-            PassNumber = (int)row["PasNummer"];
+            PassNumber = (int)row["PassNummer"];
             PinCode = (int)row["PinCode"];
         }
+        
     }
 }

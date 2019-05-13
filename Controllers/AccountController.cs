@@ -15,20 +15,20 @@ namespace BankOfBrabant.Controllers
 {
     public class AccountController : Controller
     {
+        SQLManager sqm = SQLManager.Initialize("94.208.132.186", "23412", "testdb", "user02", "X7f6EysG8jrgNQvp");
         // GET: /<controller>/
         public IActionResult CreateAccount()
-        {      
+        {
             return View();
         }
 
         public ActionResult CreateButton(String accountType, int PassNumber, string AccountName, int PinCode)
         {
-            SQLManager sqm = SQLManager.Initialize("94.208.132.186", "23412", "testdb", "user02", "X7f6EysG8jrgNQvp");
             sqm = SQLManager.Instance;
 
-            if (PassNumber != 0 & !String.IsNullOrEmpty(AccountName))
+            if (PassNumber != 0 & !String.IsNullOrEmpty(AccountName) & PinCode != 0)
             {
-                if (CheckDatabase(PassNumber, AccountName))
+                if (CheckDatabase(PassNumber, AccountName, PinCode))
                 {
                     if (accountType.Equals("depositAccount"))
                     {
@@ -56,36 +56,52 @@ namespace BankOfBrabant.Controllers
                     }
                 }
 
-                //Functions functionController = DependencyResolver.Current.GetService<Functions>();
-                //functionController.ControllerContext = new ControllerContext(this.Request.RequestContext, functionController);
-
                 else
                 {
-                    ViewBag.Message = "This account name is already in use, please choose another one.";
-                    //CreateAccount();
+                    ViewBag.Message = "Either the account name is already in use, or your pass-pincode combination is invalid";
                     return View();
                 }
             }
             else
             {
                 ViewBag.Message = "Please fill in your passnumber and desired account name.";
-                //View() = CreateAccount();
                 return View();
             }
         }
 
         //check of account name of pasnummer correct zijn
-        public bool CheckDatabase(int passnumber, string accountname)
+        public bool CheckDatabase(int passnumber, string accountname, int pinCode)
         {
-            if(5 == 5)
-            {
-                return true;
-            }
-            else
-            {
 
+            try
+            {
+                sqm = SQLManager.Instance;
+                Rekening[] rekeningen = sqm.ReadRekeningByPassNumber(passnumber);
+
+                if (rekeningen.LongLength == 0)
+                {
+                    return true;
+                }
+                if (rekeningen[0].PinCode == pinCode)
+                {
+                    foreach (Rekening rekening in rekeningen)
+                    {
+                        if (rekening.RekeningNaam.Equals(accountname))
+                        {
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                else
+                {
+                    return true;
+                }
             }
-           // return false;
-        }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }      
     }
 }
