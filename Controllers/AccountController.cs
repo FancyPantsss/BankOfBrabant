@@ -26,7 +26,7 @@ namespace BankOfBrabant.Controllers
         {
             sqm = SQLManager.Instance;
 
-            if (PassNumber != 0 & !String.IsNullOrEmpty(AccountName) & PinCode != 0)
+            if (PassNumber != 0 && !String.IsNullOrEmpty(AccountName) && PinCode != 0)
             {
                 if (CheckDatabase(PassNumber, AccountName, PinCode))
                 {
