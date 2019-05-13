@@ -342,27 +342,30 @@ namespace SqlConnection.DatabaseShit
             return id;
         }
 
-     /*   public void UpdateRekening(Rekening rekening)
-        {
-            UpdateRekening(rekening.ID, rekening.RentePercentage, rekening.Saldo, rekening.Type);
-        }
-        */
-        /*public void UpdateRekening(ulong id, float rentePercentage, decimal saldo, RekeningTypes type)
+        public void UpdateRekening(Rekening rekening)
+          {
+               UpdateRekening(rekening.Nummer, rekening.AccountType, rekening.Saldo, rekening.RentePercentage, rekening.RekeningNaam, rekening.PassNumber, rekening.PinCode);
+          }
+
+        public void UpdateRekening(string nummer, string rekeningType, decimal saldo, float rentePercentage, string accountName, int passNumber, int pinCode)
         {
             mySqlConnection.Open();
             MySqlCommand command = mySqlConnection.CreateCommand();
 
             command.CommandText = QRY_UpdateRekening;
-            command.Parameters.AddWithValue("@RekeningType", (sbyte)(byte)type);
+            command.Parameters.AddWithValue("@RekeningNummer", nummer);
+            command.Parameters.AddWithValue("@RekeningType", rekeningType);
             command.Parameters.AddWithValue("@Saldo", saldo);
             command.Parameters.AddWithValue("@RentePercentage", rentePercentage);
-            command.Parameters.AddWithValue("@ID", id);
+            command.Parameters.AddWithValue("@RekeningNaam", accountName);
+            command.Parameters.AddWithValue("@PassNumber", passNumber);
+            command.Parameters.AddWithValue("@PinCode", pinCode);
 
             command.ExecuteNonQuery();
             command.Dispose();
             mySqlConnection.Close();
         }
-        */
+        
         public Rekening[] ReadAllFromRekeningen()
         {
             DataTable table = new DataTable();
