@@ -12752,23 +12752,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD:obj/project.assets.json
     "C:\\Users\\Dave\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\Nikki.Nikki\\.nuget\\packages\\": {},
+>>>>>>> origin/Elfproef_Feature:BankOfBrabant/BankOfBrabant/obj/project.assets.json
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD:obj/project.assets.json
       "projectUniqueName": "C:\\Users\\Dave\\MyDocuments\\bankofbrabant\\BankOfBrabant.csproj",
       "projectName": "BankOfBrabant",
       "projectPath": "C:\\Users\\Dave\\MyDocuments\\bankofbrabant\\BankOfBrabant.csproj",
       "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Dave\\MyDocuments\\bankofbrabant\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Nikki.Nikki\\Documents\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
+      "projectName": "BankOfBrabant",
+      "projectPath": "C:\\Users\\Nikki.Nikki\\Documents\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant.csproj",
+      "packagesPath": "C:\\Users\\Nikki.Nikki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nikki.Nikki\\Documents\\BankOfBrabant\\BankOfBrabant\\BankOfBrabant\\obj\\",
+>>>>>>> origin/Elfproef_Feature:BankOfBrabant/BankOfBrabant/obj/project.assets.json
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+<<<<<<< HEAD:obj/project.assets.json
         "C:\\Users\\Dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Nikki.Nikki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> origin/Elfproef_Feature:BankOfBrabant/BankOfBrabant/obj/project.assets.json
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
